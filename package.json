@@ -1,0 +1,45 @@
+{
+  "name": "yarn-task-provider",
+  "displayName": "Yarn Task Provider",
+  "description": "Automatic task detection for yarn package.json files.",
+  "version": "0.0.1",
+  "publisher": "dkneeland",
+  "engines": {
+    "vscode": "^1.26.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:workbench.action.tasks.runTask"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "taskDefinitions": [{
+        "type": "yarn",
+        "required": [
+          "task"
+        ],
+        "properties": {
+          "task": {
+            "type": "string",
+            "description": "The yarn task to customize"
+          }
+        }
+    }]
+  },
+  "scripts": {
+    "vscode:prepublish": "tsc -p ./",
+    "compile": "tsc -b",
+    "watch": "tsc -b -w",
+    "postinstall": "node ./node_modules/vscode/bin/install"
+  },
+  "devDependencies": {
+    "@types/node": "^11.11.3",
+    "tslint": "^5.14.0",
+    "typescript": "^3.3.3333",
+    "vscode": "^1.1.30"
+  },
+  "license": "MIT",
+  "dependencies": {}
+}
