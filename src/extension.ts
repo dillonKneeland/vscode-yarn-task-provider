@@ -79,12 +79,12 @@ async function getYarnTasks(): Promise<vscode.Task[]> {
   let packageData = JSON.parse(fs.readFileSync(packageFile).toString());
 
   for (let key of Object.keys(packageData.scripts)) {
-    let taskName = key;
-    let kind: YarnTaskDefinition = {
+    taskName = key;
+    kind = {
       type: 'yarn',
       task: taskName
     };
-    let task = new vscode.Task(kind, taskName, 'yarn', new vscode.ShellExecution(`yarn run ${taskName}`));
+    task = new vscode.Task(kind, taskName, 'yarn', new vscode.ShellExecution(`yarn run ${taskName}`));
     result.push(task);
   }
   return result;
