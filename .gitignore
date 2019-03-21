@@ -1,3 +1,7 @@
 out
 node_modules
+<<<<<<< HEAD
 **/*.vsix
+=======
+**/*.vsix
+>>>>>>> origin/master
