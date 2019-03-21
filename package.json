@@ -34,6 +34,7 @@
     "vscode:prepublish": "tsc -p ./",
     "compile": "tsc -b",
     "watch": "tsc -b -w",
+    "build": "npm run compile && vsce package",
     "postinstall": "node ./node_modules/vscode/bin/install"
   },
   "devDependencies": {
