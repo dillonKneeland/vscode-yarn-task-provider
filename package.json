@@ -45,5 +45,9 @@
   "license": "MIT",
   "dependencies": {},
   "repository": "https://github.com/dillonKneeland/vscode-yarn-task-provider",
-  "icon": "assets/yarn-logo-128x.png"
+  "icon": "assets/yarn-logo-128x.png",
+  "galleryBanner": {
+    "color": "bb592c",
+    "theme": "light"
+  }
 }
