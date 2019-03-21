@@ -10,4 +10,8 @@ ext install dkneeland.yarn-task-provider
 
 or by searching for **Yarn Task Provider** in the VSCode extension marketplace.
 
+Now once you open a project with a `package.json` in the root directory you can use `Terminal -> Run Task...` and the extension will show you what tasks it has detected.
+
+Thanks for using this! If you have any issues please create an Issue on GitHub and/or email me at dillon.kneeland@outlook.com.
+
 [1]: https://yarnpkg.com/en/
