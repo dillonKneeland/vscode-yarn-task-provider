@@ -1,7 +1,7 @@
 
 # Visual Studio Code Yarn Task Provider
 
-![Build Status](https://dev.azure.com/dkneeland/Yarn Task Provider/_apis/build/status/dillonKneeland.vscode-yarn-task-provider?branchName=master)
+[![Build Status](https://dev.azure.com/dkneeland/yarn-task-provider/_apis/build/status/dillonKneeland.vscode-yarn-task-provider?branchName=master)](https://dev.azure.com/dkneeland/yarn-task-provider/_build/latest?definitionId=1&branchName=master)
 
 This extension adds better support for managing a package through [Yarn Package Manager][1], including running `yarn install` and running any scripts within the `scripts` section of your `package.json`.
 
