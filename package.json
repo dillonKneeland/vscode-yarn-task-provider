@@ -47,7 +47,7 @@
   "repository": "https://github.com/dillonKneeland/vscode-yarn-task-provider",
   "icon": "assets/yarn-logo-128x.png",
   "galleryBanner": {
-    "color": "bb592c",
+    "color": "4684a1",
     "theme": "light"
   }
 }
