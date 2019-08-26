@@ -24,7 +24,12 @@ export function activate(_context: vscode.ExtensionContext): void {
       return yarnPromise;
     },
     resolveTask(_task: vscode.Task): vscode.Task | undefined {
-      return undefined;
+      const {
+        task,
+        args = []
+      } = _task.definition;
+      return new vscode.Task(_task.definition, _task.name, 'yarn',
+          new vscode.ShellExecution(`yarn run ${task} ${args.join(' ')}`));
     }
   });
 }
